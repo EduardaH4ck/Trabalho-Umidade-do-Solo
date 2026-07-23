@@ -1,9 +1,21 @@
+
 import sys
 import time
 import sqlite3
 from datetime import datetime
 import serial
 import serial.tools.list_ports
+
+print("=" * 60)
+print("      BEM-VINDO AO SISTEMA DE MONITORAMENTO IoT")
+print("           Monitoramento de Umidade do Solo")
+print("=" * 60)
+
+for i in range(5, 0, -1):
+    print(f"Iniciando em {i} segundos...", end="\r")
+    time.sleep(1)
+
+print("\nSistema iniciado!\n")
 
 # ==========================================
 # DEFINIÇÃO DE LIMITES ACEITÁVEIS DO SOLO
